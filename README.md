@@ -8,9 +8,3 @@ docker build --rm=true -t ninetails/centos-lamp . < Dockerfile
 
 ## run
 docker run -i -t -p 8080:80 -v ${PWD}:/var/www:ro ninetails/centos-lamp
-
-## milestone
-
-### learn supervisord
-
-    https://github.com/mogproject/dockerfiles/tree/master/centos64/apache-mysql-php
