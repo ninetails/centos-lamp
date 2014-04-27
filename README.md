@@ -1,5 +1,9 @@
 # ninetails/centos-lamp for docker
 
+## IMPORTANT
+
+remember to create a folder on root called html, that will be created inside /var/www and is required to work on centos.
+
 ## cleanup
 
     docker stop $(docker ps -a -q); docker rm $(docker ps -a -q)
