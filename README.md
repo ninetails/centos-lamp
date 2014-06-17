@@ -14,7 +14,7 @@ remember to create a folder on root called html, that will be created inside /va
 
 ## run
 
-    docker run -i -t -p 80:80 -p 3306:3306 -p 2222:22 -v ${PWD}:/var/www:rw ninetails/centos-lamp
+    docker run -i -t -p 80:80 -p 3306:3306 -p 2222:22 -v ${PWD}/html:/var/www/html:rw ninetails/centos-lamp
 
 Change -p 8080:80 if you already uses port 80 on your host (e.g: have Apache installed on host)
 
