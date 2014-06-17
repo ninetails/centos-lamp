@@ -7,7 +7,7 @@ RUN echo 'root:123456' | chpasswd
 # install
 RUN rpm -Uvh http://mirror.webtatic.com/yum/el6/latest.rpm
 RUN curl -s http://repos.fedorapeople.org/repos/jkaluza/httpd24/epel-httpd24.repo > /etc/yum.repos.d/epel-httpd24.repo
-RUN yum install -y openssh-server xterm git mysql mysql-server httpd24-httpd php55w php55w-common php55w-cli mysql mysql-server php55w-devel php55w-mcrypt php55w-mbstring php55w-mysqlnd php55w-pdo php55w-pecl-xdebug php55w-xml php55w-xmlrpc php55w-opcache
+RUN yum install -y openssh-server xterm git mysql mysql-server httpd24-httpd php55w php55w-common php55w-cli mysql mysql-server php55w-devel php55w-mcrypt php55w-mbstring php55w-mysqlnd php55w-pdo php55w-pecl-xdebug php55w-xml php55w-xmlrpc php55w-opcache php55w-gd
 
 # setup sshd
 RUN mkdir -p /var/run/sshd ; chmod -rx /var/run/sshd
